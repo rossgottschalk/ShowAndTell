@@ -1,0 +1,26 @@
+Topic: Tuples
+
+“Tuples group multiple values into a single compound value. The values within a tuple can be of any type and do not have to be of the same type as each other.”
+
+Excerpt From: Apple Inc. “The Swift Programming Language (Swift 3 Beta).” iBooks. https://itun.es/us/k5SW7.l
+
+Tuples are a concept unique to swift. Tuples are used to group multiple values into one compound value.
+In Objective-C the values must be the same type in order to create a compound values. However, in Swift, the values can be of any type.
+You can have a tuple of (Int, String) or (Int, String, Int) or (Int, String, Bool) or just a plain old (String, String, String).
+
+let supBen = ("hi, ben", 47)
+
+Here, the tuple is composed with (String, Int).
+You can decompose a tuple from there, which helps receive separate parts of the tuple
+
+let (sayingHiToBen, randomNumber) = supBen
+print(sayingHiToBen)
+hi, ben
+
+You can also use the index numbers inside the tuple starting at 0.
+print(supBen.0)
+hi, ben
+print(supBen.1)
+47
+
+
